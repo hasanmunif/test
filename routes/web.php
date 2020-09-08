@@ -19,4 +19,8 @@ Route::get('home', function () {
     return view('main');
 });
 
+Route::get('/form', 'FormController@index'); 
+Route::post('/proses', 'FormController@proses');
+
+Route::get('/kalkulator', 'KalkulatorController@kalkulator');
 // Route::get('latihan', 'LatihanController@index');
